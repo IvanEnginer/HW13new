@@ -16,6 +16,10 @@ public class ExperiansManager : MonoBehaviour
 
     [SerializeField] private AnimationCurve _experianceCurve;
 
+    [SerializeField] private GameObject _levelUpEffect;
+
+    [SerializeField] private GameObject _player;
+
     private void Awake()
     {
         _nextLevelExperiance = _experianceCurve.Evaluate(0);
@@ -28,6 +32,7 @@ public class ExperiansManager : MonoBehaviour
         if (_expiriance >= _nextLevelExperiance)
         {
             UpLavel();
+            OnLevelUpEffect();
         }
 
         DisplayExperience();
@@ -45,5 +50,10 @@ public class ExperiansManager : MonoBehaviour
     public void DisplayExperience()
     {
         _experianceSclae.fillAmount = _expiriance/ _nextLevelExperiance;
+    }
+
+    private void OnLevelUpEffect()
+    {
+        Instantiate(_levelUpEffect, _player.GetComponent<Transform>().position, Quaternion.identity);
     }
 }
