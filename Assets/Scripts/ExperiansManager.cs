@@ -7,7 +7,7 @@ public class ExperiansManager : MonoBehaviour
     [SerializeField] private float _expiriance = 0;
     [SerializeField] private float _nextLevelExperiance = 5;
 
-    private int _level;
+    private int _level = -1;
 
     [SerializeField] private TextMeshProUGUI _levelText;
     [SerializeField] private Image _experianceSclae;

@@ -1,0 +1,177 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6559791199057921893
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5693137706769159797}
+  - component: {fileID: 4484256185661132915}
+  - component: {fileID: 6577244286383742455}
+  - component: {fileID: 5672421331667337481}
+  m_Layer: 11
+  m_Name: ShadowMissel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5693137706769159797
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6559791199057921893}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2658845593061823398}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4484256185661132915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6559791199057921893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47bf92fb170c6bf4aa23b178d846acb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rigidbody: {fileID: 5672421331667337481}
+  _collider: {fileID: 6577244286383742455}
+  _particleSystem: {fileID: 2753944237796143934}
+--- !u!135 &6577244286383742455
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6559791199057921893}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &5672421331667337481
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6559791199057921893}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 1
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!1001 &214545453766589091
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5693137706769159797}
+    m_Modifications:
+    - target: {fileID: 2740651765023916189, guid: 8421181a7364c1d42aa2328daaa3fa6c,
+        type: 3}
+      propertyPath: m_Name
+      value: FX_Fireball_Shooting_Straight_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 2740651765023916189, guid: 8421181a7364c1d42aa2328daaa3fa6c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 2741013586065383883, guid: 8421181a7364c1d42aa2328daaa3fa6c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 2741205854484103135, guid: 8421181a7364c1d42aa2328daaa3fa6c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 2746116116047636741, guid: 8421181a7364c1d42aa2328daaa3fa6c,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2746116116047636741, guid: 8421181a7364c1d42aa2328daaa3fa6c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2746116116047636741, guid: 8421181a7364c1d42aa2328daaa3fa6c,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2746116116047636741, guid: 8421181a7364c1d42aa2328daaa3fa6c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2746116116047636741, guid: 8421181a7364c1d42aa2328daaa3fa6c,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2746116116047636741, guid: 8421181a7364c1d42aa2328daaa3fa6c,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2746116116047636741, guid: 8421181a7364c1d42aa2328daaa3fa6c,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2746116116047636741, guid: 8421181a7364c1d42aa2328daaa3fa6c,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2746116116047636741, guid: 8421181a7364c1d42aa2328daaa3fa6c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2746116116047636741, guid: 8421181a7364c1d42aa2328daaa3fa6c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2746116116047636741, guid: 8421181a7364c1d42aa2328daaa3fa6c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8421181a7364c1d42aa2328daaa3fa6c, type: 3}
+--- !u!4 &2658845593061823398 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2746116116047636741, guid: 8421181a7364c1d42aa2328daaa3fa6c,
+    type: 3}
+  m_PrefabInstance: {fileID: 214545453766589091}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &2753944237796143934 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 2652002553201166749, guid: 8421181a7364c1d42aa2328daaa3fa6c,
+    type: 3}
+  m_PrefabInstance: {fileID: 214545453766589091}
+  m_PrefabAsset: {fileID: 0}

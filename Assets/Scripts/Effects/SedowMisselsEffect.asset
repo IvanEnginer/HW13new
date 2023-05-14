@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fb193f953163ec4a8d698110723de46, type: 3}
+  m_Name: SedowMisselsEffect
+  m_EditorClassIdentifier: 
+  Name: Sedow Missels
+  Description: 
+  Sprite: {fileID: 21300000, guid: 384686ac3350efe42b18ff5de7e81121, type: 3}
+  Level: -1
+  _colldown: 1
+  _shadowMisselPrefab: {fileID: 4484256185661132915, guid: 3e7e7a3a5a2f30f4cb8feb3e7ed1084c,
+    type: 3}
+  _bulletSpeed: 6
