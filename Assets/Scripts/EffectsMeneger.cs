@@ -114,16 +114,16 @@ public class EffectsMeneger : MonoBehaviour
                 _continuesEffectsApplied.Add(c_effect);
                 _continuesEffects.Remove(c_effect);
             }
-            else if(effect is OneTimeEffect o_effect)
-            {
-                if(!_oneTimeEffectsApplied.Contains(o_effect))
-                {
-                    _oneTimeEffectsApplied.Remove(o_effect);
-                    _oneTimeEffects.Add(o_effect);
-                }
-            }
-
-            //effect.Activate();
         }
+        else if (effect is OneTimeEffect o_effect)
+        {
+            if (!_oneTimeEffectsApplied.Contains(o_effect))
+            {
+                _oneTimeEffectsApplied.Add(o_effect);
+                _oneTimeEffects.Remove(o_effect);
+            }
+        }
+
+        effect.Activate();
     }
 }

@@ -267,7 +267,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 260075703f8c2f64bb322658c40676a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _iconBackground: {fileID: 9191177037437012734}
+  _iconBackground: {fileID: 9191177037272607748}
   _iconImage: {fileID: 9191177038517450470}
   _nameText: {fileID: 9191177037425738458}
   _descriptionText: {fileID: 9191177038990575941}

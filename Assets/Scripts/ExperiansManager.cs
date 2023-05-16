@@ -16,7 +16,7 @@ public class ExperiansManager : MonoBehaviour
 
     [SerializeField] private AnimationCurve _experianceCurve;
 
-    [SerializeField] private GameObject _levelUpEffect;
+    [SerializeField] private ParticleSystem _levelUpEffect;
 
     [SerializeField] private GameObject _player;
 
@@ -54,6 +54,6 @@ public class ExperiansManager : MonoBehaviour
 
     private void OnLevelUpEffect()
     {
-        Instantiate(_levelUpEffect, _player.GetComponent<Transform>().position, Quaternion.identity);
+        _levelUpEffect.Play();
     }
 }

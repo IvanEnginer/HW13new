@@ -13,8 +13,9 @@ public class BleckHoleEffect : ContiniuseEffect
 
         Transform playerTransform = _player.transform;
 
-        Vector2 randomPoint = Random.insideUnitCircle.normalized;
-        Vector3 position = new Vector3(randomPoint.x, 0, randomPoint.y) * _creationRadius + playerTransform.position;
+        //Vector2 randomPoint = Random.insideUnitCircle.normalized;
+        Vector2 randomPoint = Random.insideUnitCircle * _creationRadius;
+        Vector3 position = new Vector3(randomPoint.x, 0, randomPoint.y) + playerTransform.position;
         BleckHole newBleckHole = Instantiate(_bleckHolePrefab, position, Quaternion.identity);
 
         newBleckHole.Setup(_damage);
